@@ -27,7 +27,6 @@ public class RozvrhApi {
                 try (InputStreamReader reader = new InputStreamReader(connection.getInputStream())){
                     StagRozvrhResponse response = gson.fromJson(reader, StagRozvrhResponse.class);
                     if(response != null && response.getRozvrhovaAkce() != null){
-                        System.out.println("Data úspěšně načtena a naparsována");
                         return response.getRozvrhovaAkce();
                     }else{
                         System.out.println("Chyba: JSON odpověď je prázdná nebo má jinou strukturu");

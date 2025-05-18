@@ -10,18 +10,13 @@ public class RozvrhovaAkce {
     private TimeValue hodinaSkutDo;
     private Ucitel ucitel;
 
-    public String gettypAkce() {
-        return typAkce != null ? typAkce : "";
-    }
-    @SerializedName("prijmeni")
-    public String getucitel() {
-        return ucitel.getUcitel();
-    }
+    public String gettypAkce() {return typAkce;}
+    public String getucitel() {return ucitel.getUcitel();}
     public String getDen() {
-        return den != null ? den : "";
+        return den;
     }
     public String getPredmet() {
-        return predmet != null ? predmet : "";
+        return predmet;
     }
     public String getHodinaSkutOd() {
         return hodinaSkutOd.getValue();

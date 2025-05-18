@@ -32,7 +32,7 @@ public class RozvrhApp extends JFrame {
         mistnostiBudov = new HashMap<>();
         mistnostiBudov.put("J", new String[]{"J1", "J10", "J11", "J12", "J13"});
         mistnostiBudov.put("A", new String[]{"A1", "AULA", "A10", "A11", "A12"});
-        mistnostiBudov.put("S", new String[]{"S1", "S10", "S11", "S12", "S13"});
+        mistnostiBudov.put("S", new String[]{"S1", "S10", "S11", "S12", "S15"});
 
         budova = new JComboBox<>(budovy);
         mistnost = new JComboBox<>();
